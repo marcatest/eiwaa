@@ -1,0 +1,71 @@
+.modal-window {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffffe6;
+    z-index: 9999999999999;
+}
+
+.progress-view {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 0px 0px, rgb(0 0 0 / 33%) 0px 0px 0px 0px, rgb(0 0 0 / 54%) 0px 1px 2px 0px;
+    user-select: none;
+    pointer-events: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-image {
+    width: 100%;
+    height: auto;
+    padding-top: 19px;
+}
+
+.progress-image img {
+    width: 100%;
+    height: 39px;
+}
+
+.progress-text {
+    text-align: center;
+    font-family: var(--my-font);
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.progress-container
+{
+    position: relative;
+}
+.progress-loader
+{
+    border: solid 2px #413c87;
+    border-left-color: transparent;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    position: absolute;
+    border-radius: 50%;
+    left: -2px;
+    top: -2px;
+    animation: rotation 2s infinite linear;
+    transform: rotate(0deg);
+}
+
+@keyframes rotation
+{
+    from {
+        -webkit-transform: rotate(0deg);
+}
+to {
+        -webkit-transform: rotate(359deg);
+}
+}

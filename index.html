@@ -14,7 +14,18 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/eiw.css" />
+    <link rel="stylesheet" href="js/validator.css" />
+    <script src="js/validator.js"></script>
+    <link rel="stylesheet" href="js/progress.css" />
+    <script src="js/progress.js"></script>
+    <script src="js/formats.js"></script>
+    <link rel="stylesheet" href="js/toast.css" />
+    <script src="js/toast.js"></script>
 
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLbQTmtRJDUHjeWu7Ok324PDDzbx2ZFwU&libraries=places&callback=initAutocomplete"
+        async defer>
+    </script>
 </head>
 
 <body class="my-font">
@@ -38,19 +49,47 @@
                         </svg>
                     </div>
                     <div class="content">
-                        <div class="phone-text">
-                            <a href="tel:97165264301">+971 65264301 (UAE)</a>
+                        <div class="phone-head">
+                            UAE
                         </div>
                         <div class="phone-text">
-                            <a href="tel:966138574446">+96 6138574446(KSA)</a>
+                            <a href="tel:97165264301">+971 65264301</a>
+                        </div>
+                        <div class="phone-text">
+                            <a href="tel:966138574446">+96 6138574446</a>
                         </div>
                     </div>
                     <div class="content">
-                        <div class="phone-text">
-                            <a href="tel:97165264301">+971 65264301 (Oman)</a>
+                        <div class="phone-head">
+                            KSA
                         </div>
                         <div class="phone-text">
-                            <a href="tel:966138574446">+96 6138574446 (Bahrain)</a>
+                            <a href="tel:97165264301">+971 65264301</a>
+                        </div>
+                        <div class="phone-text">
+                            <a href="tel:966138574446">+96 6138574446</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="phone-head">
+                            OMAN
+                        </div>
+                        <div class="phone-text">
+                            <a href="tel:97165264301">+971 65264301</a>
+                        </div>
+                        <div class="phone-text">
+                            <a href="tel:966138574446">+96 6138574446</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="phone-head">
+                            BAHRAIN
+                        </div>
+                        <div class="phone-text">
+                            <a href="tel:97165264301">+971 65264301</a>
+                        </div>
+                        <div class="phone-text">
+                            <a href="tel:966138574446">+96 6138574446</a>
                         </div>
                     </div>
                 </div>
@@ -98,19 +137,120 @@
             </div>
             <div class="top-col2">
                 <div class="btn-group">
-                    <button type="button" class="service-bttn dropdown-toggle" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Services
+                    <button type="button" class="service-bttn" id="bttncheckfree">
+                        Check free mobilization
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#">Water Bag Rental/Supply</a>
-                        <a class="dropdown-item" href="#">Digital Dynamometer Rental/Supply</a>
-                        <a class="dropdown-item" href="#">Test Weight Hiring Services</a>
-                        <a class="dropdown-item" href="#">Hiring Services of Sausage lifting bags</a>
-                        <a class="dropdown-item" href="#">Hiring Services of Lifting Tools</a>
-                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="service-con">
+        <div class="service-view">
+             <div class="service-item">
+                 <div class="service-text">WATER BAG RENTAL/SUPPLY</div>
+                 <div class="service-icon">
+                    <svg width="1em" height="1em" x="0px" y="0px" fill="currentColor"
+                        viewBox="0 0 20.633 20.633" style="enable-background:new 0 0 20.633 20.633;" xml:space="preserve">
+                        <path d="M10.79,15.617l9.648-9.646c0.133-0.131,0.195-0.301,0.195-0.473s-0.062-0.344-0.195-0.473l-0.012-0.012
+                            c-0.125-0.127-0.295-0.195-0.472-0.195h-4.682c-0.18,0-0.348,0.068-0.473,0.195l-4.48,4.479l-4.48-4.479
+                            C5.711,4.886,5.54,4.818,5.366,4.818H0.684c-0.182,0-0.349,0.068-0.475,0.195L0.196,5.025C0.068,5.148,0,5.322,0,5.498
+                            c0,0.176,0.068,0.348,0.196,0.473l9.648,9.646C10.108,15.88,10.53,15.88,10.79,15.617z"/>
+                    </svg>
+                 </div>
+                 <div class="service-more">
+                    <div class="service-more-head">
+                        WATER BAG RENTAL/SUPPLY
+                    </div>
+                    <div class="service-more-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                 
+                    </div>
+                 </div>
+             </div>
+             <div class="service-item">
+                 <div class="service-text">DIGITAL DYNAMOMETER RENTAL/SUPPLY</div>
+                 <div class="service-icon">
+                    <svg width="1em" height="1em" x="0px" y="0px" fill="currentColor"
+                        viewBox="0 0 20.633 20.633" style="enable-background:new 0 0 20.633 20.633;" xml:space="preserve">
+                        <path d="M10.79,15.617l9.648-9.646c0.133-0.131,0.195-0.301,0.195-0.473s-0.062-0.344-0.195-0.473l-0.012-0.012
+                            c-0.125-0.127-0.295-0.195-0.472-0.195h-4.682c-0.18,0-0.348,0.068-0.473,0.195l-4.48,4.479l-4.48-4.479
+                            C5.711,4.886,5.54,4.818,5.366,4.818H0.684c-0.182,0-0.349,0.068-0.475,0.195L0.196,5.025C0.068,5.148,0,5.322,0,5.498
+                            c0,0.176,0.068,0.348,0.196,0.473l9.648,9.646C10.108,15.88,10.53,15.88,10.79,15.617z"/>
+                    </svg>
+                 </div>
+                 <div class="service-more">
+                    <div class="service-more-head">
+                        DIGITAL DYNAMOMETER RENTAL/SUPPLY
+                    </div>
+                    <div class="service-more-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                 
+                    </div>
+                 </div>
+             </div> 
+               <div class="service-item">
+                 <div class="service-text">TEST WEIGHT HIRING SERVICES</div>
+                 <div class="service-icon">
+                    <svg width="1em" height="1em" x="0px" y="0px" fill="currentColor"
+                        viewBox="0 0 20.633 20.633" style="enable-background:new 0 0 20.633 20.633;" xml:space="preserve">
+                        <path d="M10.79,15.617l9.648-9.646c0.133-0.131,0.195-0.301,0.195-0.473s-0.062-0.344-0.195-0.473l-0.012-0.012
+                            c-0.125-0.127-0.295-0.195-0.472-0.195h-4.682c-0.18,0-0.348,0.068-0.473,0.195l-4.48,4.479l-4.48-4.479
+                            C5.711,4.886,5.54,4.818,5.366,4.818H0.684c-0.182,0-0.349,0.068-0.475,0.195L0.196,5.025C0.068,5.148,0,5.322,0,5.498
+                            c0,0.176,0.068,0.348,0.196,0.473l9.648,9.646C10.108,15.88,10.53,15.88,10.79,15.617z"/>
+                    </svg>
+                 </div>
+                 <div class="service-more">
+                    <div class="service-more-head">
+                        TEST WEIGHT HIRING SERVICES
+                    </div>
+                    <div class="service-more-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                 
+                    </div>
+                 </div>
+             </div>
+             <div class="service-item">
+                 <div class="service-text">HIRING SERVICES OF SAUSAGE LIFTING BAGS</div>
+                 <div class="service-icon">
+                    <svg width="1em" height="1em" x="0px" y="0px" fill="currentColor"
+                        viewBox="0 0 20.633 20.633" style="enable-background:new 0 0 20.633 20.633;" xml:space="preserve">
+                        <path d="M10.79,15.617l9.648-9.646c0.133-0.131,0.195-0.301,0.195-0.473s-0.062-0.344-0.195-0.473l-0.012-0.012
+                            c-0.125-0.127-0.295-0.195-0.472-0.195h-4.682c-0.18,0-0.348,0.068-0.473,0.195l-4.48,4.479l-4.48-4.479
+                            C5.711,4.886,5.54,4.818,5.366,4.818H0.684c-0.182,0-0.349,0.068-0.475,0.195L0.196,5.025C0.068,5.148,0,5.322,0,5.498
+                            c0,0.176,0.068,0.348,0.196,0.473l9.648,9.646C10.108,15.88,10.53,15.88,10.79,15.617z"/>
+                    </svg>
+                 </div>
+                 <div class="service-more">
+                    <div class="service-more-head">
+                        HIRING SERVICES OF SAUSAGE LIFTING BAGS
+                    </div>
+                    <div class="service-more-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                 
+                    </div>
+                 </div>
+             </div>
+             <div class="service-item">
+                 <div class="service-text">HIRING SERVICES OF LIFTING TOOLS</div>
+                 <div class="service-icon">
+                    <svg width="1em" height="1em" x="0px" y="0px" fill="currentColor"
+                        viewBox="0 0 20.633 20.633" style="enable-background:new 0 0 20.633 20.633;" xml:space="preserve">
+                        <path d="M10.79,15.617l9.648-9.646c0.133-0.131,0.195-0.301,0.195-0.473s-0.062-0.344-0.195-0.473l-0.012-0.012
+                            c-0.125-0.127-0.295-0.195-0.472-0.195h-4.682c-0.18,0-0.348,0.068-0.473,0.195l-4.48,4.479l-4.48-4.479
+                            C5.711,4.886,5.54,4.818,5.366,4.818H0.684c-0.182,0-0.349,0.068-0.475,0.195L0.196,5.025C0.068,5.148,0,5.322,0,5.498
+                            c0,0.176,0.068,0.348,0.196,0.473l9.648,9.646C10.108,15.88,10.53,15.88,10.79,15.617z"/>
+                    </svg>
+                 </div>
+                 <div class="service-more">
+                    <div class="service-more-head">
+                        HIRING SERVICES OF LIFTING TOOLS
+                    </div>
+                    <div class="service-more-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                 
+                    </div>
+                 </div>
+             </div>
         </div>
     </div>
     <div class="splash-con">
@@ -119,12 +259,10 @@
                 <div class="logo">
                     <a href="index.html"><img class="logoimg" src="images/logo.svg" /></a>
                 </div>
-                <div class="caption" data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="300"
-                data-aos-offset="0">
+                <div class="caption" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                    data-aos-offset="0">
                     <div class="caption-1">
-                        <h1 >One Stop Hiring Solution for Proof load testing Water bags,Digital Dynamometer, Lifting
+                        <h1>One Stop Hiring Solution for Proof load testing Water bags,Digital Dynamometer, Lifting
                             tools at Anywhere, Any time….</h1>
                     </div>
                 </div>
@@ -134,7 +272,7 @@
             </div>
         </div>
     </div>
-    <div class="call-con" >
+    <div class="call-con">
         <div class="call-view">
             <div class="xl-h1">
                 Looking for hiring…?
@@ -153,40 +291,89 @@
         </div>
     </div>
     <div class="desc-con">
-            <div class="desc-view">
-                <div class="desc-col1">
-                    <div class="desc-h1">
-                        <h1>Free Proof load selection of Offshore Crane</h1>
-                    </div>
-                    <div class="desc-text">
-                        <p>
-                            Best Heavy Lifting Water bag Rental Services & Lifting Appliances Hiring Servicesin Saudi Arabia, UAE ,Oman and Angola for meeting the Work Equipment Inspection and Heavy Machinery Inspection Requirements across the Globe………….
-                        </p>
-                        <p>
-                            EIWAA is a worldwide acclaimed Lifting tools and Water bag weights hiring Company in UAE, Saudi Arabia (KSA),Oman and Angola. We, EIWAA Marine provides DNV,BV, ABS Approved Water bags or Water Weights rental services by various capacities of 2 ton, 5 ton, 12.5 ton,20 ton, 35 ton, 50 ton , 100 ton and 110 ton with remote type digital  dynamometer load cell connecting with shackles and slings.Water filled weight bags are used as an alternative solid test weight for lifting equipment inspection or Work Equipment Inspection at Marine/offshore industries .Water bags are can easily handle in non-accessible area, light weight, compact sizes, Sea water availability and drainage facility of sea water at yard etc. Water bag or Water weight connecting with lifting accessories is used as proof load testing requirements of Heavy Machinery Inspection or Work Equipment Inspection complying with LOLER and PUWER Inspection Requirements. As a Major oilfield/Marine load testing company  in UAE,Oman,Saudi Arabia and Angola ;EIWAA provides  LEEA Approved Inspection Engineers and OPITO Approved Riggers & they will perform the rigging and signaling operation, Preparation of Rigging Plan, Lifting Plan, Preparation of Load Testing procedure/Work Equipment Procedure etc.by using the safe operation &Handling of water bags, water filled weight bags, Marine lifting bags,Water filled bags ,Digital dynamometer load cell,LiftingBeam,Spreader beam,Grommet Slings,Round slings,Lifting gears and lifting appliances in order to meet the proof load testing requirements of Construction Equipment Inspection, Heavy Lifting Equipment Inspection, Heavy Machinery Inspection, Lifting Appliances Inspection, Lifting Accessories Inspection etc.</p>
-                            <p>
-                                As a best Lifting tool Rental Services in Saudi Arabia (KSA), UAE,Oman and Angola; we are always offering calibrated  Proof Load Testing bags for rental, Hiring of Sausage bags, Hiring of Dynamometer Digital load cell with handheld for different capacities and heavy lifting slings and Grommet slings/Shackles in order to meet the Periodic Heavy lifting Equipment Inspection, Work Equipment Inspection Services and Lifting Appliances Inspection.EIWAA is the one stop solution for Lifting tools rental services of Water bags and Dynamometer load cell connecting with shackles and slings facilitating for Equipment Inspection and Certifications with quick mobilization and 24 x7 technical supports whoever they are using our rental services in KSA, Angola,Oman and UAE .
-                            </p>
-                    
-                    
-                    </div>
-                    <div class="readmore" >
-                        <a href="javascript:void(0);" onclick="document.getElementsByClassName('desc-text')[0].style.height='auto';document.getElementsByClassName('readmore')[0].style.display='none';">Readmore <span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve" width="1em" height="1em">
-                       <path id="XMLID_27_" d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
+        <div class="desc-view">
+            <div class="desc-col1">
+                <div class="desc-h1">
+                    Water bag Rental Services & Lifting Appliances
+                </div>
+                <div class="desc-text">
+                    <p>
+                        Best Heavy Lifting Water bag Rental Services & Lifting Appliances Hiring Servicesin Saudi
+                        Arabia, UAE ,Oman and Angola for meeting the Work Equipment Inspection and Heavy Machinery
+                        Inspection Requirements across the Globe………….
+                    </p>
+                    <p>
+                        EIWAA is a worldwide acclaimed Lifting tools and Water bag weights hiring Company in UAE, Saudi
+                        Arabia (KSA),Oman and Angola. We, EIWAA Marine provides DNV,BV, ABS Approved Water bags or Water
+                        Weights rental services by various capacities of 2 ton, 5 ton, 12.5 ton,20 ton, 35 ton, 50 ton ,
+                        100 ton and 110 ton with remote type digital dynamometer load cell connecting with shackles and
+                        slings.Water filled weight bags are used as an alternative solid test weight for lifting
+                        equipment inspection or Work Equipment Inspection at Marine/offshore industries .Water bags are
+                        can easily handle in non-accessible area, light weight, compact sizes, Sea water availability
+                        and drainage facility of sea water at yard etc. Water bag or Water weight connecting with
+                        lifting accessories is used as proof load testing requirements of Heavy Machinery Inspection or
+                        Work Equipment Inspection complying with LOLER and PUWER Inspection Requirements. As a Major
+                        oilfield/Marine load testing company in UAE,Oman,Saudi Arabia and Angola ;EIWAA provides LEEA
+                        Approved Inspection Engineers and OPITO Approved Riggers & they will perform the rigging and
+                        signaling operation, Preparation of Rigging Plan, Lifting Plan, Preparation of Load Testing
+                        procedure/Work Equipment Procedure etc.by using the safe operation &Handling of water bags,
+                        water filled weight bags, Marine lifting bags,Water filled bags ,Digital dynamometer load
+                        cell,LiftingBeam,Spreader beam,Grommet Slings,Round slings,Lifting gears and lifting appliances
+                        in order to meet the proof load testing requirements of Construction Equipment Inspection, Heavy
+                        Lifting Equipment Inspection, Heavy Machinery Inspection, Lifting Appliances Inspection, Lifting
+                        Accessories Inspection etc.</p>
+                    <p>
+                        As a best Lifting tool Rental Services in Saudi Arabia (KSA), UAE,Oman and Angola; we are always
+                        offering calibrated Proof Load Testing bags for rental, Hiring of Sausage bags, Hiring of
+                        Dynamometer Digital load cell with handheld for different capacities and heavy lifting slings
+                        and Grommet slings/Shackles in order to meet the Periodic Heavy lifting Equipment Inspection,
+                        Work Equipment Inspection Services and Lifting Appliances Inspection.EIWAA is the one stop
+                        solution for Lifting tools rental services of Water bags and Dynamometer load cell connecting
+                        with shackles and slings facilitating for Equipment Inspection and Certifications with quick
+                        mobilization and 24 x7 technical supports whoever they are using our rental services in KSA,
+                        Angola,Oman and UAE .
+                    </p>
+
+
+                </div>
+                <div class="readmore">
+                    <a href="javascript:void(0);"
+                        onclick="document.getElementsByClassName('desc-text')[0].style.height='auto';document.getElementsByClassName('readmore')[0].style.display='none';">Readmore
+                        <span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330"
+                                style="enable-background:new 0 0 330 330;" xml:space="preserve" width="1em"
+                                height="1em">
+                                <path id="XMLID_27_"
+                                    d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
                            s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
-                           c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"/>
-                       </svg>
-                       </span></a>
+                           c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z" />
+                            </svg>
+                        </span></a>
+                </div>
+            </div>
+            <div class="desc-col2">
+                <div class="desc-image">
+                    <img src="images/desc1.webp" />
+                    <div class="desc-image2">
+                        <img src="images/desc2.webp" />
                     </div>
                 </div>
-                <div class="desc-col2">
-                        <div class="desc-image">
-                            <img src="images/desc1.webp"/>
-                            <div class="desc-image2">
-                                <img src="images/desc2.webp"/>
-                            </div>
-                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="proof-con">
+            <div class="proof-view">
+                <div class="proof-h1">
+                    Free Proof load selection of Offshore Crane
+                </div>
+                <div class="proof-h2">
+                    Enter Safe work load
+                </div>
+                <div class="proof-box">
+                    <input class="myinput" id="txtproofload" type="number" placeholder="Safe Work Load" />
+                </div>
+                <div class="proof-result">
+                  
                 </div>
             </div>
     </div>
@@ -248,13 +435,13 @@
             </div>
             <div class="faq-col2">
                 <div class="accordion" id="accordionExample">
-                    <div class="faq-item" data-toggle="collapse"
-                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="faq-item" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
                         <div class="faq-item-head">
                             <div class="faq-head-text">Why water bag is used in Marine Industry…?</div>
                             <button class="faq-head-bttn" type="button" data-toggle="collapse"
                                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                
+
                             </button>
                         </div>
                         <div id="collapseOne" class="collapse faq-item-body show" data-parent="#accordionExample">
@@ -266,13 +453,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="faq-item collapsed" data-toggle="collapse"
-                                data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                    <div class="faq-item collapsed" data-toggle="collapse" data-target="#collapseOne1"
+                        aria-expanded="true" aria-controls="collapseOne1">
                         <div class="faq-item-head collapsed">
                             <div class="faq-head-text">What is meant by Water bag…?</div>
                             <button class="faq-head-bttn collapsed" type="button" data-toggle="collapse"
                                 data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                                
+
                             </button>
                         </div>
                         <div id="collapseOne1" class="collapse faq-item-body" data-parent="#accordionExample">
@@ -283,13 +470,13 @@
                                 in order to meet the crane load test requirements during crane load testing time.</p>
                         </div>
                     </div>
-                    <div class="faq-item collapsed" data-toggle="collapse"
-                    data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                    <div class="faq-item collapsed" data-toggle="collapse" data-target="#collapseOne2"
+                        aria-expanded="true" aria-controls="collapseOne2">
                         <div class="faq-item-head  collapsed">
                             <div class="faq-head-text">Importance of water bag in Marine Industry…?</div>
                             <button class="faq-head-bttn collapsed" type="button" data-toggle="collapse"
                                 data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                                
+
                             </button>
                         </div>
                         <div id="collapseOne2" class="collapse faq-item-body" data-parent="#accordionExample">
@@ -300,13 +487,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="faq-item collapsed" data-toggle="collapse"
-                    data-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                    <div class="faq-item collapsed" data-toggle="collapse" data-target="#collapseOne3"
+                        aria-expanded="true" aria-controls="collapseOne3">
                         <div class="faq-item-head  collapsed">
                             <div class="faq-head-text">Is the Water bag Calibrated…?</div>
                             <button class="faq-head-bttn collapsed" type="button" data-toggle="collapse"
                                 data-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
-                                
+
                             </button>
                         </div>
                         <div id="collapseOne3" class="collapse faq-item-body" data-parent="#accordionExample">
@@ -314,13 +501,13 @@
                                 Yes.. Frequency is every 6 month</p>
                         </div>
                     </div>
-                    <div class="faq-item collapsed" data-toggle="collapse"
-                    data-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                    <div class="faq-item collapsed" data-toggle="collapse" data-target="#collapseOne4"
+                        aria-expanded="true" aria-controls="collapseOne4">
                         <div class="faq-item-head  collapsed">
                             <div class="faq-head-text">What is meant by Digital Dynamometer Load cell …</div>
                             <button class="faq-head-bttn collapsed" type="button" data-toggle="collapse"
                                 data-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
-                                
+
                             </button>
                         </div>
                         <div id="collapseOne4" class="collapse faq-item-body" data-parent="#accordionExample">
@@ -349,108 +536,160 @@
                         <div class="foot-head-text-sm">EIWAA Marine & Industrial Consultancy</div>
                         <div class="foot-head-text-sm1">P.O Box- 41524, Sharjah, UAE.</div>
                         <div class="foot-head-text-sm1">Ph: +971 65264301</div>
-                        <div class="foot-head-text-sm1">Email:<a href="services@eiwaaconsultancy.com">services@eiwaaconsultancy.com</a></div>
+                        <div class="foot-head-text-sm1">Email:<a
+                                href="services@eiwaaconsultancy.com">services@eiwaaconsultancy.com</a></div>
                     </div>
                     <div class="mb-3">
                         <div class="foot-head-text-sm">EIWAA Marine & Industrial Consultancy</div>
                         <div class="foot-head-text-sm1">P.O Box- 41524, Sharjah, UAE.</div>
                         <div class="foot-head-text-sm1">Ph: +971 65264301</div>
-                        <div class="foot-head-text-sm1">Email:<a href="services@eiwaaconsultancy.com">services@eiwaaconsultancy.com</a></div>
+                        <div class="foot-head-text-sm1">Email:<a
+                                href="services@eiwaaconsultancy.com">services@eiwaaconsultancy.com</a></div>
                     </div>
                     <div class="mb-3">
                         <div class="foot-head-text-sm">EIWAA Marine & Industrial Consultancy</div>
                         <div class="foot-head-text-sm1">P.O Box- 41524, Sharjah, UAE.</div>
                         <div class="foot-head-text-sm1">Ph: +971 65264301</div>
-                        <div class="foot-head-text-sm1">Email:<a href="services@eiwaaconsultancy.com">services@eiwaaconsultancy.com</a></div>
+                        <div class="foot-head-text-sm1">Email:<a
+                                href="services@eiwaaconsultancy.com">services@eiwaaconsultancy.com</a></div>
                     </div>
                 </div>
                 <div>
-                    <div class="foot-head-text">SERVICES</div>                    
-                      <div> 
-                        <div class="foot-head-text-sm1"><a  href="#">Water Bag Rental / Supply</a></div> 
-                        <div class="foot-head-text-sm1"><a  href="#">Digital Dynamometer Rental / Supply</a></div> 
-                        <div class="foot-head-text-sm1"><a  href="#">Test Weight Hiring Services</a></div> 
-                        <div class="foot-head-text-sm1"><a  href="#">Hiring Services of Sausage lifting bags</a></div> 
-                        <div class="foot-head-text-sm1"><a  href="#">Hiring Services of Lifting Tools</a></div> 
-                     </div>
+                    <div class="foot-head-text">SERVICES</div>
+                    <div>
+                        <div class="foot-head-text-sm1"><a href="#">Water Bag Rental / Supply</a></div>
+                        <div class="foot-head-text-sm1"><a href="#">Digital Dynamometer Rental / Supply</a></div>
+                        <div class="foot-head-text-sm1"><a href="#">Test Weight Hiring Services</a></div>
+                        <div class="foot-head-text-sm1"><a href="#">Hiring Services of Sausage lifting bags</a></div>
+                        <div class="foot-head-text-sm1"><a href="#">Hiring Services of Lifting Tools</a></div>
+                    </div>
                 </div>
             </div>
             <div class="foot-right-view">
-                    <div class="foot-logo">
-                        <img class="foot-logoimg" src="images/whitebottomlogo.svg"/>
-                    </div>
-                    <div class="soc-items">
-                         <div class="soc-item">
-                            <a href="">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
-	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve"  width="1em" height="1em" fill="currentColor">
-<path style="fill:#FFFFFF;" d="M34,26.7l1.2-7.8h-7.5v-5c0-2.1,1-4.2,4.4-4.2h3.4V3c0,0-3.1-0.5-6-0.5c-6.1,0-10.2,3.7-10.2,10.5
-	v5.9h-6.8v7.8h6.8v18.8h8.4V26.7H34z"/>
-</svg>
+                <div class="foot-logo">
+                    <img class="foot-logoimg" src="images/whitebottomlogo.svg" />
+                </div>
+                <div class="soc-items">
+                    <div class="soc-item">
+                        <a href="">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+                                style="enable-background:new 0 0 48 48;" xml:space="preserve" width="1em" height="1em"
+                                fill="currentColor">
+                                <path style="fill:#FFFFFF;" d="M34,26.7l1.2-7.8h-7.5v-5c0-2.1,1-4.2,4.4-4.2h3.4V3c0,0-3.1-0.5-6-0.5c-6.1,0-10.2,3.7-10.2,10.5
+	v5.9h-6.8v7.8h6.8v18.8h8.4V26.7H34z" />
+                            </svg>
 
-                           
-                            </a>                       
-                        </div>
-                        <div class="soc-item">
-                            <a href="">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve"  width="1em" height="1em" fill="currentColor">
-                           <path style="fill:#FFFFFF;" d="M36.1,9.9c-1.4,0-2.6,1.2-2.6,2.6c0,1.4,1.2,2.6,2.6,2.6c1.4,0,2.6-1.2,2.6-2.6
-                               C38.7,11.1,37.5,9.9,36.1,9.9"/>
-                           <path style="fill:#FFFFFF;" d="M24.5,13.2c-6,0-10.9,4.9-10.9,10.9c0,6,4.9,10.9,10.9,10.9c6,0,10.9-4.9,10.9-10.9
-                               C35.5,18.1,30.6,13.2,24.5,13.2 M24.5,31.2c-3.9,0-7-3.1-7-7s3.1-7,7-7c3.9,0,7,3.1,7,7S28.4,31.2,24.5,31.2"/>
-                           <path style="fill:#FFFFFF;" d="M33.2,46.4H15.5c-7.4,0-13.3-6-13.3-13.3V15.3C2.2,8,8.2,2,15.5,2h17.7c7.3,0,13.3,6,13.3,13.3V33
+
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+                                style="enable-background:new 0 0 48 48;" xml:space="preserve" width="1em" height="1em"
+                                fill="currentColor">
+                                <path style="fill:#FFFFFF;" d="M36.1,9.9c-1.4,0-2.6,1.2-2.6,2.6c0,1.4,1.2,2.6,2.6,2.6c1.4,0,2.6-1.2,2.6-2.6
+                               C38.7,11.1,37.5,9.9,36.1,9.9" />
+                                <path style="fill:#FFFFFF;"
+                                    d="M24.5,13.2c-6,0-10.9,4.9-10.9,10.9c0,6,4.9,10.9,10.9,10.9c6,0,10.9-4.9,10.9-10.9
+                               C35.5,18.1,30.6,13.2,24.5,13.2 M24.5,31.2c-3.9,0-7-3.1-7-7s3.1-7,7-7c3.9,0,7,3.1,7,7S28.4,31.2,24.5,31.2" />
+                                <path style="fill:#FFFFFF;" d="M33.2,46.4H15.5c-7.4,0-13.3-6-13.3-13.3V15.3C2.2,8,8.2,2,15.5,2h17.7c7.3,0,13.3,6,13.3,13.3V33
                                C46.6,40.4,40.6,46.4,33.2,46.4 M15.5,6.2c-5,0-9.2,4.1-9.2,9.2V33c0,5,4.1,9.2,9.2,9.2h17.7c5,0,9.2-4.1,9.2-9.2V15.3
-                               c0-5-4.1-9.2-9.2-9.2H15.5z"/>
-                           </svg>
-                           
-                            </a>                       
-                        </div>
-                        <div class="soc-item">
-                            <a href="">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve"  width="1em" height="1em" fill="currentColor">
-                           <path  d="M46.3,9.9c-1.4,0.6-3,1-4.5,1.3c0.7-0.1,1.8-1.4,2.2-2c0.7-0.8,1.2-1.7,1.5-2.8l0-0.2l-0.2,0
+                               c0-5-4.1-9.2-9.2-9.2H15.5z" />
+                            </svg>
+
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+                                style="enable-background:new 0 0 48 48;" xml:space="preserve" width="1em" height="1em"
+                                fill="currentColor">
+                                <path
+                                    d="M46.3,9.9c-1.4,0.6-3,1-4.5,1.3c0.7-0.1,1.8-1.4,2.2-2c0.7-0.8,1.2-1.7,1.5-2.8l0-0.2l-0.2,0
                                c-1.7,0.9-3.5,1.6-5.4,2.1c-0.2,0-0.3,0-0.4-0.1c-0.2-0.2-0.3-0.3-0.5-0.5c-0.8-0.7-1.6-1.2-2.6-1.6c-1.3-0.5-2.6-0.7-4-0.6
                                c-1.3,0.1-2.6,0.5-3.8,1.1c-1.2,0.6-2.2,1.5-3.1,2.5c-0.9,1.1-1.5,2.3-1.8,3.7c-0.3,1.3-0.3,2.6-0.1,3.9c0,0.2,0,0.2-0.2,0.2
                                C16,15.7,9.9,13.1,4.9,7.4c-0.2-0.2-0.3-0.2-0.5,0C2.2,10.7,3.3,16,6,18.5c0.4,0.3,0.7,0.7,1.1,1c-0.1,0-2-0.2-3.6-1
                                c-0.2-0.1-0.3-0.1-0.3,0.2c0,0.4,0,0.7,0.1,1.1c0.4,3.3,2.7,6.4,5.8,7.6c0.4,0.2,0.8,0.3,1.2,0.4c-0.7,0.2-1.5,0.3-3.5,0.1
                                c-0.3,0-0.4,0.1-0.3,0.3c1.5,4.2,4.9,5.5,7.4,6.2c0.3,0.1,0.7,0.1,1,0.1l-0.1,0.1c-0.8,1.3-3.7,2.2-5,2.7c-2.4,0.9-5.1,1.2-7.6,1
                                c-0.4-0.1-0.5-0.1-0.6,0c-0.1,0.1,0,0.2,0.1,0.3c0.5,0.3,1.1,0.6,1.6,0.9c1.6,0.9,3.3,1.6,5.1,2c9.2,2.5,19.5,0.7,26.4-6.2
-                               c5.4-5.4,7.3-12.8,7.3-20.2c0-0.3,0.3-0.5,0.5-0.6c1.4-1.1,2.5-2.3,3.6-3.7c0.2-0.3,0.2-0.6,0.2-0.7v0C46.5,9.8,46.5,9.9,46.3,9.9"
-                               />
-                           </svg>
-                           
-                            </a>                       
-                        </div>
-                        <div class="soc-item">
-                            <a href="">
-                              
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve"  width="1em" height="1em" fill="currentColor">
-                                   <path  d="M1.7,46.4l3.2-11.9c-1.8-3.3-2.8-6.9-2.8-10.6C2.1,11.8,12,2,24.1,2S46,11.8,46,23.9
+                               c5.4-5.4,7.3-12.8,7.3-20.2c0-0.3,0.3-0.5,0.5-0.6c1.4-1.1,2.5-2.3,3.6-3.7c0.2-0.3,0.2-0.6,0.2-0.7v0C46.5,9.8,46.5,9.9,46.3,9.9" />
+                            </svg>
+
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="">
+
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+                                style="enable-background:new 0 0 48 48;" xml:space="preserve" width="1em" height="1em"
+                                fill="currentColor">
+                                <path
+                                    d="M1.7,46.4l3.2-11.9c-1.8-3.3-2.8-6.9-2.8-10.6C2.1,11.8,12,2,24.1,2S46,11.8,46,23.9
                                        s-9.8,21.9-21.9,21.9c-3.6,0-7.2-0.9-10.4-2.7L1.7,46.4z M14.2,38.7l0.8,0.4c2.8,1.6,5.9,2.5,9.1,2.5c9.8,0,17.8-8,17.8-17.8
-                                       c0-9.8-8-17.8-17.8-17.8c-9.8,0-17.8,8-17.8,17.8c0,3.2,0.9,6.4,2.6,9.2l0.5,0.8l-1.8,6.6L14.2,38.7z"/>
-                                   <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M32.2,27c-0.9-0.5-2.1-1.1-3.1-0.7c-0.8,0.3-1.3,1.6-1.9,2.3
+                                       c0-9.8-8-17.8-17.8-17.8c-9.8,0-17.8,8-17.8,17.8c0,3.2,0.9,6.4,2.6,9.2l0.5,0.8l-1.8,6.6L14.2,38.7z" />
+                                <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M32.2,27c-0.9-0.5-2.1-1.1-3.1-0.7c-0.8,0.3-1.3,1.6-1.9,2.3
                                        c-0.3,0.3-0.6,0.4-1,0.2c-3.1-1.2-5.4-3.3-7.1-6.1c-0.3-0.4-0.2-0.8,0.1-1.2c0.5-0.6,1.2-1.3,1.3-2.1c0.1-0.8-0.2-1.8-0.6-2.5
                                        c-0.4-0.9-0.9-2.2-1.8-2.8c-0.8-0.5-2-0.2-2.7,0.4c-1.3,1.1-1.9,2.7-1.9,4.4c0,0.5,0.1,0.9,0.2,1.4c0.3,1.1,0.8,2.1,1.3,3.1
                                        c0.4,0.7,0.9,1.4,1.4,2.1c1.6,2.2,3.7,4.2,6,5.6c1.2,0.7,2.4,1.4,3.8,1.8c1.5,0.5,2.8,1,4.4,0.7c1.7-0.3,3.3-1.3,4-3
-                                       c0.2-0.5,0.3-1,0.2-1.5C34.5,28.1,33.1,27.5,32.2,27"/>
-                                   
-                                   </svg>
-                            </a>                       
-                        </div>
-                        <div class="soc-item">
-                            <a href="">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="1em" height="1em" fill="currentColor">
-                                <path  d="M46.3,18.2c0-5.4-4.4-9.8-9.8-9.8h-25c-5.4,0-9.8,4.4-9.8,9.8v11.6c0,5.4,4.4,9.8,9.8,9.8h25
-                                    c5.4,0,9.8-4.4,9.8-9.8V18.2z M31.6,24.9l-11.2,5.6c-0.4,0.2-1.9-0.1-1.9-0.6V18.4c0-0.5,1.5-0.8,1.9-0.6l10.7,5.8
-                                    C31.6,24,32,24.6,31.6,24.9"/>
-                                </svg>
-                            </a>                       
-                        </div>
+                                       c0.2-0.5,0.3-1,0.2-1.5C34.5,28.1,33.1,27.5,32.2,27" />
+
+                            </svg>
+                        </a>
                     </div>
+                    <div class="soc-item">
+                        <a href="">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+                                style="enable-background:new 0 0 48 48;" xml:space="preserve" width="1em" height="1em"
+                                fill="currentColor">
+                                <path d="M46.3,18.2c0-5.4-4.4-9.8-9.8-9.8h-25c-5.4,0-9.8,4.4-9.8,9.8v11.6c0,5.4,4.4,9.8,9.8,9.8h25
+                                    c5.4,0,9.8-4.4,9.8-9.8V18.2z M31.6,24.9l-11.2,5.6c-0.4,0.2-1.9-0.1-1.9-0.6V18.4c0-0.5,1.5-0.8,1.9-0.6l10.7,5.8
+                                    C31.6,24,32,24.6,31.6,24.9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobilize-window">
+        <div class="mobilize-content">
+            <div class="mobilize-view">
+                <div class="mobilize-h1">
+                    CHECK FREE MOBILIZATION
+                </div>
+                <div class="mobilize-h2">
+                    Fill information to continue
+                </div>
+                <div class="my-form-mobilize">
+                    <div class="my-form-group">
+                        <input type="text" class="my-form-input" id="txtlocation" placeholder=" " />
+                        <label class="my-label" for="txtlocation">Location</label>
+                    </div>
+                    <div class="my-form-group">
+                        <input type="text" class="my-form-input" id="txtworkload" placeholder=" " />
+                        <label class="my-label" for="txtworkload">Capacity</label>
+                    </div>
+                    <div class="my-form-group">
+                        <input type="text" class="my-form-input" id="txthiringperiod" placeholder=" " />
+                        <label class="my-label" for="txthiringperiod">Hiring Period(Months)</label>
+                    </div>
+                    <div class="my-bttn-group">
+                        <button class="my-bttn" id="bttnproceed">Proceed</button>
+                    </div>
+                </div>
+                <div class="pop-close">
+                    <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12,11.2928932 L16.1464466,7.14644661 C16.3417088,6.95118446 16.6582912,6.95118446 16.8535534,7.14644661 C17.0488155,7.34170876 17.0488155,7.65829124 16.8535534,7.85355339 L12.7071068,12 L16.8535534,16.1464466 C17.0488155,16.3417088 17.0488155,16.6582912 16.8535534,16.8535534 C16.6582912,17.0488155 16.3417088,17.0488155 16.1464466,16.8535534 L12,12.7071068 L7.85355339,16.8535534 C7.65829124,17.0488155 7.34170876,17.0488155 7.14644661,16.8535534 C6.95118446,16.6582912 6.95118446,16.3417088 7.14644661,16.1464466 L11.2928932,12 L7.14644661,7.85355339 C6.95118446,7.65829124 6.95118446,7.34170876 7.14644661,7.14644661 C7.34170876,6.95118446 7.65829124,6.95118446 7.85355339,7.14644661 L12,11.2928932 Z">
+                        </path>
+                    </svg>
+                </div>
             </div>
         </div>
     </div>
@@ -459,4 +698,63 @@
 </html>
 <script>
     AOS.init();
-  </script>
+
+    var centrelat = 11.758679630227023;
+    var centrelong = 75.5779126573533;
+    var currentlat = 0;
+    var currentlong = 0;
+    var mydistance = 0;
+
+    function initAutocomplete() {
+        var autocomplete = new google.maps.places.Autocomplete(
+            document.getElementById('txtlocation')
+        );
+
+        google.maps.event.addListener(autocomplete, 'place_changed', () => {
+            let place = autocomplete.getPlace();
+            currentlat = place.geometry.location.lat();
+            currentlong = place.geometry.location.lng();
+            mydistance = distance(centrelat, centrelong, currentlat, currentlong);
+        });
+    }
+
+    function distance(lat1, lon1, lat2, lon2) {
+        var p = 0.017453292519943295; // Math.PI / 180
+        var c = Math.cos;
+        var a = 0.5 - c((lat2 - lat1) * p) / 2 +
+            c(lat1 * p) * c(lat2 * p) *
+            (1 - c((lon2 - lon1) * p)) / 2;
+
+        return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
+    }
+
+    $('#txtlocation').on('enter', function () {
+        currentlat = 0;
+        currentlong = 0;
+        mydistance = 0;
+    });
+    $('#bttnproceed').on('click', () => {
+        if (validator.checkvalidation(["#txtlocation", "#txtworkload", "#txthiringperiod"])) {
+            loader.showloaderinside("Processing...", '.mobilize-view');
+            if (mydistance > 25 || mydistance <= 0) {
+                loader.hideloaderinside('.mobilize-view');
+                showalerttoast("Sorry", "Free Mobilisation Not Available");
+            } else {
+                loader.hideloaderinside('.mobilize-view');
+                showsuccesstoast("Free Mobilisation", "Available");
+
+            }
+        }
+    });
+    $('#bttncheckfree').on('click', () => {
+        $('.mobilize-window').fadeIn();
+    });
+    $('.pop-close').on('click', () => {
+        $('.mobilize-window').fadeOut();
+        validator.clearerrorandvalue(["#txtlocation", "#txtworkload", "#txthiringperiod"]);
+    });
+    $('#txtproofload').on('input',function(){
+       var value=cdbl($(this).val());
+       $('.proof-result').text("Maximum Proof Load : "+parseFloat(value*1.2).toFixed(2));
+    });
+</script>

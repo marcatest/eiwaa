@@ -1,0 +1,14 @@
+.show-error
+{border-color: red!important;}
+.show-error:focus
+{    
+border-color: red;
+}
+.error-text
+{
+    font-family: var(--my-font);
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 5px;
+}
