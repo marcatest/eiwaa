@@ -190,9 +190,15 @@ html {
 .caption-1 h1 {
 
     font-size: 34px;
-
     letter-spacing: 3px;
+    color: #EA6404;
+    font-weight: 600;
 
+}
+.span-mini
+{
+    color: black;
+    font-size: 22px;
 }
 
 .caption-2 {}
@@ -503,16 +509,7 @@ html {
     color: #000000;
 }
 
-.leftimage {
-
-    position: absolute;
-
-    width: 500px;
-
-    top: -208px;
-
-    left: -10px;
-}
+.leftimage {position: absolute;width: 325px;top: -136px;left: -10px;}
 
 .rightimage {
 
@@ -603,7 +600,7 @@ html {
 }
 
 .desc-view {
-    width: 1200px;
+    width: 1000px;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -631,18 +628,18 @@ h1 {
 }
 
 .desc-h1 {
-    font-size: 33px;
+    font-size: 27px;
     font-weight: 600;
     margin-bottom: 12px;
     text-align: center;
 }
 
 .desc-text {
-    text-indent: 25px;
-    font-size: 14px;
+    text-indent: 43px;
+    font-size: 15px;
     text-align: justify;
-    line-height: 2;
-    font-weight: 200;
+    line-height: 1.5;
+    font-weight: 400;
     overflow: hidden;
     height: 357px;
     transition: width 2s, height 4s;
@@ -1610,4 +1607,13 @@ h1 {
 .foot-logo-view
 {
     width: 237px;
+}
+.goo-items {padding-top: 20px;}
+.goo-item {display: flex;gap: 11px;align-items: center;margin-bottom: 10px;}
+.goo-icon {}
+.goo-icon img{
+    width: 38px;
+}
+.goo-text {color: white;font-size: 14px;}
+@media only screen and (max-width: 768px) {
 }
