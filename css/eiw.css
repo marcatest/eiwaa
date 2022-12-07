@@ -2661,6 +2661,10 @@ h1 {
     transform: rotateY(300deg) translateZ(150px);
     background: none;
 }
+.desc-col2
+{
+    display: none;
+}
 
 
 }
