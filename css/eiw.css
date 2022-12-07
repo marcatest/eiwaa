@@ -1887,9 +1887,11 @@ h1 {
     }
     
     .proof-box {
-        width: 400px;
+        width: 100%;
         margin: auto;
         padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
     .proof-result {
