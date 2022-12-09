@@ -257,7 +257,7 @@ html {
 
 .myinput {
     background-color: #2F2F2F;
-    border: 0;
+    border: solid 1px black;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
@@ -379,16 +379,7 @@ html {
     border-bottom: solid 1px #dfdfdf;
 }
 
-.faq-view {
-
-    width: 1200px;
-
-    margin: auto;
-
-    display: flex;
-
-    padding-top: 50px;
-}
+.faq-view {width: 1200px;margin: auto;display: flex;padding-top: 15px;}
 
 .faq-col1 {
     width: 45%;
@@ -498,7 +489,7 @@ html {
     text-align: center;
 }
 
-.footer-con {background: #707070;height: auto;padding-bottom: 25px;}
+.footer-con {background: #36489E;height: auto;padding-bottom: 25px;}
 
 .footer-view {
     width: 1200px;
@@ -543,14 +534,7 @@ html {
 
 .foot-logoimg {}
 
-.soc-items {
-
-    display: flex;
-
-    gap: 16px;
-
-    padding-top: 29px;
-}
+.soc-items {display: flex;gap: 16px;padding-top: 10px;}
 
 .soc-item {
     font-size: 18px;
@@ -882,7 +866,7 @@ h1 {
     padding-top: 5px;
     /* border-bottom: solid 1px #193892b3; */
     color: #2e2e2e;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     /* background: #f5f5f56e; */
     margin-bottom: 5px;
@@ -1444,6 +1428,11 @@ h1 {
     font-size: 14px;
     padding: 8px;
     background: transparent;
+    color: white;
+}
+.mail-input:focus
+{
+    outline: none;
 }
 .mail-input::placeholder
 {
@@ -1591,6 +1580,23 @@ h1 {
 .top-con-mob
 {
     display: none;
+}
+.social-h1
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+.faq-table-container
+{
+    overflow-x: auto;
+}
+.faq-back-view
+{
+    width: 1200px;
+    margin: auto;
+    padding-left: 40px;
+    padding-top: 25px;
 }
 @media only screen and (max-width: 1920px) {
     .splash-data
@@ -2105,7 +2111,7 @@ h1 {
     width: 100%;
     margin: auto;
     display: flex;
-    padding-top: 50px;
+    padding-top: 0px;
     flex-direction: column;
     }
     
@@ -2132,7 +2138,7 @@ h1 {
     .faq-col2 {
         width: 100%;
         padding-left: 15px;
-        padding-top: 51px;
+        padding-top: 0px;
         padding-right: 15px;
     }
     
@@ -2667,6 +2673,7 @@ h1 {
 {
     display: none;
 }
-
+.faq-back-view
+{padding-left: 15px;}
 
 }
