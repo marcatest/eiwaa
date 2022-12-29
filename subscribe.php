@@ -25,7 +25,7 @@ require 'mailer/src/SMTP.php';
 
          //Recipients
          $mail->setFrom('eiwanoreply@gmail.com', 'EIWAA HIRING');
-         $mail->addAddress("devops@marcamonaci.com");  
+         $mail->addAddress("info@eiwaagroup.com");  
 
      
          //Content
